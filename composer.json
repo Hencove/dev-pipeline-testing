@@ -21,7 +21,8 @@
    "require": {
 	   "wpackagist-theme/frost": "*",
 	   "wpackagist-plugin/gutenberg": "*",
-	   "wpackagist-plugin/wordpress-seo": "*"
+	   "wpackagist-plugin/wordpress-seo": "*",
+      "wpengine/advanced-custom-fields-pro": "*"
    },
    "extra": {
 	   "installer-paths": {
