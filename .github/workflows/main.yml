@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Preparing to deploy to WP Engine production"
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: GitHub Action Deploy to WP Engine
         uses: wpengine/github-action-wpe-site-deploy@v3
         with:
@@ -29,6 +29,6 @@ jobs:
           # to other than the WordPress root.
           REMOTE_PATH: "wp-content/"
           # Optional flags for the deployment
-          FLAGS: -azvr --inplace --delete --include-from=rsync-config/includes.txt --exclude=.* --exclude-from=rsync-config/excludes.txt
+          FLAGS: -azvr --inplace --delete --exclude=.* --exclude-from=.deployignore
           # File containing custom scripts run after the rsync
           SCRIPT: wp-content/bin/post-deploy.sh
