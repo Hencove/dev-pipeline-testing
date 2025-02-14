@@ -1,5 +1,5 @@
 {
-   "name": "dev-pipeline-testing",
+   "name": "hencove/dev-pipeline-testing",
    "description": "Dev pipeline testing incluing composer and deploy to WPENgine via Github",
    "license": "GPL-2.0+",
    "type": "project",
