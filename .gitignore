@@ -3,8 +3,6 @@
 #---------------------------
 # Ignore the wp-content/index.php
 /index.php
-advanced-cache.php
-
 
 #---------------------------
 # WordPress themes
@@ -52,6 +50,11 @@ auth.json
 #---------------------------
 /.logs/
 autoupdater_maintenance_mode_enabled.tmp
+
+#---------------------------
+# WPE - Advanced cache
+#---------------------------
+advanced-cache.php
 
 #---------------------------
 # large/disallowed file types
