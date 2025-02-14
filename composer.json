@@ -1,0 +1,36 @@
+{
+   "name": "dev-pipeline-testing",
+   "description": "Dev pipeline testing incluing composer and deploy to WPENgine via Github",
+   "license": "GPL-2.0+",
+   "type": "project",
+   "repositories": [
+	   {
+		   "type":"composer",
+		   "url":"https://wpackagist.org",
+		   "only": [
+			   "wpackagist-plugin/*",
+			   "wpackagist-theme/*"
+		   ]
+	   }
+   ],
+   "require": {
+	   "wpackagist-theme/frost": "*",
+	   "wpackagist-plugin/gutenberg": "*",
+	   "wpackagist-plugin/wordpress-seo": "*"
+   },
+   "extra": {
+	   "installer-paths": {
+		   "plugins/{$name}/": [
+			   "type:wordpress-plugin"
+		   ],
+		   "themes/{$name}/": [
+			   "type:wordpress-theme"
+		   ]
+	   }
+   },
+   "config": {
+	   "allow-plugins": {
+		   "composer/installers": true
+	   }
+   }
+}
