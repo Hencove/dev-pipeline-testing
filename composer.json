@@ -10,11 +10,12 @@
 		   "only": [
 			   "wpackagist-plugin/*",
 			   "wpackagist-theme/*"
-		   ],
-		   
+		   ]
+	   },
+	   
+	   {
 		   "type":"composer",
 		   "url":"https://connect.advancedcustomfields.com"
-		   
 	   }
    ],
    "require": {
