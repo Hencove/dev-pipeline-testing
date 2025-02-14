@@ -29,6 +29,6 @@ jobs:
           # to other than the WordPress root.
           REMOTE_PATH: "wp-content/"
           # Optional flags for the deployment
-          FLAGS: -azvr --inplace --delete --exclude=.* --exclude-from=.deployignore
+          FLAGS: -azvr --inplace --delete --include-from=.deployinclude --exclude=.* --exclude-from=.deployignore
           # File containing custom scripts run after the rsync
           SCRIPT: wp-content/bin/post-deploy.sh
