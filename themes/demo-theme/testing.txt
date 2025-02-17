@@ -1,1 +1,1 @@
-Modifying file to test the push again - none of the themes should get deleted
+Updating the "theme" as a demo
